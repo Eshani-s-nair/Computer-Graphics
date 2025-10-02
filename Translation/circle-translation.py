@@ -1,4 +1,4 @@
-#translation of shape (circle)
+#translation of shape (circle) wrt origin
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
