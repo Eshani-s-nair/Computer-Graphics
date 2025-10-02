@@ -4,7 +4,6 @@ from OpenGL.GLU import *
 from OpenGL.GLUT import *
 import math
 x1,y1,x2,y2=100,0,300,0
-tx,ty=50,50
 angle=45
 def init():
     glClearColor(0.0,0.0,0.0,1.0)
