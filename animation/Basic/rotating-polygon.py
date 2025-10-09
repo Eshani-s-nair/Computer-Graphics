@@ -9,7 +9,6 @@ def init():
     glLoadIdentity()
     gluOrtho2D(-200, 200, -200, 200)
 def display():
-    global angle
     glClear(GL_COLOR_BUFFER_BIT)
     glMatrixMode(GL_MODELVIEW)
     glLoadIdentity()
@@ -23,10 +22,12 @@ def display():
     glEnd()
     glPopMatrix()
     glutSwapBuffers()
+    
+def timer(v):
+    global angle
     angle += 1
     if angle >= 360:
         angle = 0
-def timer(v):
     glutPostRedisplay()
     glutTimerFunc(16, timer, 0)   
 def main():
