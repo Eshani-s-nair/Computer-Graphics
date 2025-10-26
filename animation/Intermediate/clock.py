@@ -14,7 +14,7 @@ def init():
     glColor3f(1, 1, 1)
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    gluOrtho2D(0, width, 0, height)  # coordinate range (0,0) to (500,500)
+    gluOrtho2D(0, width, 0, height)  
     glMatrixMode(GL_MODELVIEW)
 
 def draw_circle(xc, yc, r):
